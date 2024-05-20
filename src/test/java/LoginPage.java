@@ -12,13 +12,14 @@ public class LoginPage {
         this.driver = driver;
     }
 
-    @FindBy(id = "username")
+    @FindBy(xpath = "//*[@id='username']")
     private WebElement usernameInput;
 
-    @FindBy(id = "password")
+
+    @FindBy(xpath = "//*[@id='password']")
     private WebElement passwordInput;
 
-    @FindBy(id = "kc-login")
+    @FindBy(xpath = "//*[@id='kc-login']")
     private WebElement loginBtn;
 
     @FindBy(xpath = "/html/head/title")

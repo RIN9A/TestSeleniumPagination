@@ -24,7 +24,7 @@ public class ProcessingQueuePage {
     @FindBy(xpath = "//*[@class=\"btn\"]/[text()=\"Применить\"]")
     private WebElement buttonPrimenit;
 
-    @FindBy(xpath = "//*[@id=\"filter_button\"]/button")
+    @FindBy(css = "#filter_button > button")
     private WebElement btnOtfiltrov;
 
     //@FindBy(className = "mat-row cdk-row")
@@ -75,7 +75,67 @@ public class ProcessingQueuePage {
     }
 
 
+    public WebElement getExitBtn() {
+        return exitBtn;
+    }
 
+    public void setExitBtn(WebElement exitBtn) {
+        this.exitBtn = exitBtn;
+    }
 
+    public WebElement getUserMenu() {
+        return userMenu;
+    }
 
+    public void setUserMenu(WebElement userMenu) {
+        this.userMenu = userMenu;
+    }
+
+    public WebElement getBtnClean() {
+        return btnClean;
+    }
+
+    public void setBtnClean(WebElement btnClean) {
+        this.btnClean = btnClean;
+    }
+
+    public WebElement getBtnOtfiltrov() {
+        return btnOtfiltrov;
+    }
+
+    public void setBtnOtfiltrov(WebElement btnOtfiltrov) {
+        this.btnOtfiltrov = btnOtfiltrov;
+    }
+
+    public WebElement getButtonPrimenit() {
+        return buttonPrimenit;
+    }
+
+    public void setButtonPrimenit(WebElement buttonPrimenit) {
+        this.buttonPrimenit = buttonPrimenit;
+    }
+
+    public WebElement getButtonNow() {
+        return buttonNow;
+    }
+
+    public void setButtonNow(WebElement buttonNow) {
+        this.buttonNow = buttonNow;
+    }
+
+    public WebElement getButtonLastMnth() {
+        return buttonLastMnth;
+    }
+
+    public void setButtonLastMnth(WebElement buttonLastMnth) {
+        this.buttonLastMnth = buttonLastMnth;
+    }
+
+    public WebElement getDatePickerFilter() {
+        return datePickerFilter;
+    }
+
+    public void setDatePickerFilter(WebElement datePickerFilter) {
+        this.datePickerFilter = datePickerFilter;
+    }
 }
